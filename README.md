@@ -109,26 +109,6 @@ Additional information can be found on our [Support Page](https://trunkstarter.c
 
 Want to help develop DockSTARTer? Check out our [contributing guidelines](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CONTRIBUTING.md) and [code of conduct](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CODE_OF_CONDUCT.md).
 
-### Contributors
-
-## Supporters
-
-Support the project by donating on [Open Collective]().
-
-### Backers
-
-[![Backers on Open Collective](https://img.shields.io/opencollective/tier/DockSTARTer/7408.svg?style=flat-square&color=607D8B&label=backers)]()
-
-Thank you to all our backers! [Become a backer]().
-
-[![Backers on Open Collective]()]()
-
-### Sponsors
-
-[![Sponsors on Open Collective]()]()
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [Become a sponsor]().
-
 ## Special Thanks
 
 - [nemchik (iXNyne)](https://github.com/nemchik) for creating [DockSTARter](https://github.com/Ghostwriters/Dockstarter) that served as this project's primary codebase and nemchik and the rest of the DS staffs support in my constant bothering with questions.

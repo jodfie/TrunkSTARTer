@@ -1,0 +1,3 @@
+services:
+  metabase:
+    hostname: ${DOCKERHOSTNAME}

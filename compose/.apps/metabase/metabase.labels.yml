@@ -1,0 +1,9 @@
+services:
+  metabase:
+    labels:
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Metabase is the easy, open source way to help everyone in your company work with data like an analyst.
+      com.trunkstarter.appinfo.nicename: metabase
+      com.trunkstarter.appvars.metabase_network_mode: ""
+      com.trunkstarter.appvars.metabase_port_3000: "3000"
+      com.trunkstarter.appvars.app-name_restart: unless-stopped

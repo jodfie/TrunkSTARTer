@@ -1,0 +1,3 @@
+services:
+  metabase:
+    network_mode: ${METABASE_NETWORK_MODE}

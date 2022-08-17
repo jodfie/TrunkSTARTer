@@ -1,0 +1,4 @@
+services:
+  metabase:
+    ports:
+      - ${METABASE_PORT_3000}:3000

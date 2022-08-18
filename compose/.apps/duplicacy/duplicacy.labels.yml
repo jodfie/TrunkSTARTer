@@ -6,7 +6,7 @@ services:
       com.trunkstarter.appinfo.nicename: Duplicacy
       com.trunkstarter.appvars.duplicacy_trunkdata_dir: ~/.config/trunkdata
       com.trunkstarter.appvars.duplicacy_backup_dir: ~/backup
-      com.trunkstarter.appvars.duplicacy_trunker_dir: ~/.trunker/
+      com.trunkstarter.appvars.duplicacy_docker_dir: ~/.docker/
       com.trunkstarter.appvars.duplicacy_enabled: "false"
       com.trunkstarter.appvars.duplicacy_network_mode: ""
       com.trunkstarter.appvars.duplicacy_port_3875: "3875"

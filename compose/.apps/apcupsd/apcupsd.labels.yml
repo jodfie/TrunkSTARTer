@@ -2,16 +2,16 @@ services:
   apcupsd:
     labels:
       com.trunkstarter.appinfo.deprecated: "false"
-      com.trunkstarter.appinfo.description: trunkerized Python script that will send data from apcupsd to influxdb.
+      com.trunkstarter.appinfo.description: Dockerized Python script that will send data from apcupsd to influxdb.
       com.trunkstarter.appinfo.nicename: apcupsd
       com.trunkstarter.appvars.apcupsd_debug: "false"
       com.trunkstarter.appvars.apcupsd_enabled: "false"
-      com.trunkstarter.appvars.apcupsd_host: ""
+      com.trunkstarter.appvars.apcupsd_host: "localhost"
       com.trunkstarter.appvars.apcupsd_infuxdb_database: apcupsd
       com.trunkstarter.appvars.apcupsd_infuxdb_host: influxdb
-      com.trunkstarter.appvars.apcupsd_infuxdb_password: ""
+      com.trunkstarter.appvars.apcupsd_infuxdb_password: "ts"
       com.trunkstarter.appvars.apcupsd_infuxdb_port: "8086"
-      com.trunkstarter.appvars.apcupsd_infuxdb_user: ""
+      com.trunkstarter.appvars.apcupsd_infuxdb_user: "ts"
       com.trunkstarter.appvars.apcupsd_interval: "10"
       com.trunkstarter.appvars.apcupsd_network_mode: ""
       com.trunkstarter.appvars.apcupsd_restart: unless-stopped

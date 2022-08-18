@@ -2,7 +2,7 @@ services:
   timemachine:
     labels:
       com.trunkstarter.appinfo.deprecated: "false"
-      com.trunkstarter.appinfo.description: trunker image to run Samba to provide a compatible Time Machine for macOS
+      com.trunkstarter.appinfo.description: Docker image to run Samba to provide a compatible Time Machine for macOS
       com.trunkstarter.appinfo.nicename: TimeMachine
       com.trunkstarter.appvars.timemachine_enabled: "false"
       com.trunkstarter.appvars.timemachine_custom_smb_conf: "false"

@@ -42,7 +42,7 @@ For regular usage you can run without providing any options.
 -u --update
     update TrunkSTARTer to the latest stable commits
 -u --update <branch>
-    update TrunkTARTer to the latest commits from the specified branch
+    update TrunkSTARTer to the latest commits from the specified branch
 -v --verbose
     verbose
 -x --debug

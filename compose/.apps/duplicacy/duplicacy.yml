@@ -17,6 +17,6 @@ services:
       - ${DOCKERCONFDIR}/duplicacy/config:/config
       - ${DOCKERCONFDIR}/duplicacy/logs:/logs
       - ${DOCKERSTORAGEDIR}:/storage
-      - ${DUPLICACY_trunkdata_DIR}:/backuproot/trunkdata:ro
+      - ${DUPLICACY_TRUNKDATA_DIR}:/backuproot/trunkdata:ro
       - ${DUPLICACY_BACKUP_DIR}:/backup
       - ${DUPLICACY_DOCKER_DIR}:/backuproot/docker:ro

@@ -14,7 +14,7 @@ Try not to [code like a cowboy](https://en.wikipedia.org/wiki/Cowboy_coding).
 1. Run `bash /path/to/your/ts-repo/main.sh`
 1. The `ts` symlink should be created but let's verify. We'll run `whereis` to see where `ts` is and then run `ls -l` on this path to ensure the symlink points to `/path/to/your/ts-repo/main.sh`. E.g:
 
-```
+```bash
 dev0@dev0:~/gitsource/TrunkSTARTer$ whereis ts
 ts: /usr/bin/ts /usr/local/bin/ts
 dev0@dev0:~/gitsource/TrunkSTARTer$ ls -l /usr/bin/ts

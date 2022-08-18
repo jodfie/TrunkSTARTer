@@ -1,13 +1,13 @@
 services:
   vsftpd:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Probably the most secure and fastest FTP server for UNIX-like systems
-      com.dockstarter.appinfo.nicename: vsftpd
-      com.dockstarter.appvars.vsftpd_datadir: /mnt/vsftpd
-      com.dockstarter.appvars.vsftpd_enabled: "false"
-      com.dockstarter.appvars.vsftpd_ftp_pass: ""
-      com.dockstarter.appvars.vsftpd_ftp_user: ""
-      com.dockstarter.appvars.vsftpd_network_mode: ""
-      com.dockstarter.appvars.vsftpd_port_21: "21"
-      com.dockstarter.appvars.vsftpd_restart: unless-stopped
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Probably the most secure and fastest FTP server for UNIX-like systems
+      com.trunkstarter.appinfo.nicename: vsftpd
+      com.trunkstarter.appvars.vsftpd_datadir: /mnt/vsftpd
+      com.trunkstarter.appvars.vsftpd_enabled: "false"
+      com.trunkstarter.appvars.vsftpd_ftp_pass: ""
+      com.trunkstarter.appvars.vsftpd_ftp_user: ""
+      com.trunkstarter.appvars.vsftpd_network_mode: ""
+      com.trunkstarter.appvars.vsftpd_port_21: "21"
+      com.trunkstarter.appvars.vsftpd_restart: unless-stopped

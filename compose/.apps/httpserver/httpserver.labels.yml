@@ -1,13 +1,13 @@
 services:
   httpserver:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: http-server is a simple binary to provide a static http server from a given folder.
-      com.dockstarter.appinfo.nicename: httpserver
-      com.dockstarter.appvars.httpserver_enabled: "false"
-      com.dockstarter.appvars.httpserver_file_server_color_set: indigo-red
-      com.dockstarter.appvars.httpserver_file_server_title: DockSTARTer
-      com.dockstarter.appvars.httpserver_html_dir: ""
-      com.dockstarter.appvars.httpserver_network_mode: ""
-      com.dockstarter.appvars.httpserver_port_5000: "5000"
-      com.dockstarter.appvars.httpserver_restart: unless-stopped
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: http-server is a simple binary to provide a static http server from a given folder.
+      com.trunkstarter.appinfo.nicename: httpserver
+      com.trunkstarter.appvars.httpserver_enabled: "false"
+      com.trunkstarter.appvars.httpserver_file_server_color_set: indigo-red
+      com.trunkstarter.appvars.httpserver_file_server_title: TrunkSTARTer
+      com.trunkstarter.appvars.httpserver_html_dir: ""
+      com.trunkstarter.appvars.httpserver_network_mode: ""
+      com.trunkstarter.appvars.httpserver_port_5000: "5000"
+      com.trunkstarter.appvars.httpserver_restart: unless-stopped

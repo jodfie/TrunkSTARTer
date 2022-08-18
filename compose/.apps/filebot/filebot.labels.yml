@@ -1,12 +1,12 @@
 services:
   filebot:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Tool for organizing your media
-      com.dockstarter.appinfo.nicename: FileBot
-      com.dockstarter.appvars.filebot_enabled: "false"
-      com.dockstarter.appvars.filebot_network_mode: ""
-      com.dockstarter.appvars.filebot_outputdir: /mnt/filebot/output
-      com.dockstarter.appvars.filebot_port_5800: "5800"
-      com.dockstarter.appvars.filebot_restart: unless-stopped
-      com.dockstarter.appvars.filebot_watchdir: /mnt/filebot/watch
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Tool for organizing your media
+      com.trunkstarter.appinfo.nicename: FileBot
+      com.trunkstarter.appvars.filebot_enabled: "false"
+      com.trunkstarter.appvars.filebot_network_mode: ""
+      com.trunkstarter.appvars.filebot_outputdir: /mnt/filebot/output
+      com.trunkstarter.appvars.filebot_port_5800: "5800"
+      com.trunkstarter.appvars.filebot_restart: unless-stopped
+      com.trunkstarter.appvars.filebot_watchdir: /mnt/filebot/watch

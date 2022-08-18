@@ -1,20 +1,20 @@
 services:
   swag:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Secure Web-server And Gateway
-      com.dockstarter.appinfo.nicename: SWAG
-      com.dockstarter.appvars.swag_dnsplugin: ""
-      com.dockstarter.appvars.swag_duckdnstoken: ""
-      com.dockstarter.appvars.swag_email: ""
-      com.dockstarter.appvars.swag_enabled: "false"
-      com.dockstarter.appvars.swag_extra_domains: ""
-      com.dockstarter.appvars.swag_maxminddb_license_key: ""
-      com.dockstarter.appvars.swag_network_mode: ""
-      com.dockstarter.appvars.swag_only_subdomains: "false"
-      com.dockstarter.appvars.swag_port_443: "443"
-      com.dockstarter.appvars.swag_port_80: "80"
-      com.dockstarter.appvars.swag_restart: unless-stopped
-      com.dockstarter.appvars.swag_subdomains: www
-      com.dockstarter.appvars.swag_url: ""
-      com.dockstarter.appvars.swag_validation: http
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Secure Web-server And Gateway
+      com.trunkstarter.appinfo.nicename: SWAG
+      com.trunkstarter.appvars.swag_dnsplugin: ""
+      com.trunkstarter.appvars.swag_duckdnstoken: ""
+      com.trunkstarter.appvars.swag_email: ""
+      com.trunkstarter.appvars.swag_enabled: "false"
+      com.trunkstarter.appvars.swag_extra_domains: ""
+      com.trunkstarter.appvars.swag_maxminddb_license_key: ""
+      com.trunkstarter.appvars.swag_network_mode: ""
+      com.trunkstarter.appvars.swag_only_subdomains: "false"
+      com.trunkstarter.appvars.swag_port_443: "443"
+      com.trunkstarter.appvars.swag_port_80: "80"
+      com.trunkstarter.appvars.swag_restart: unless-stopped
+      com.trunkstarter.appvars.swag_subdomains: www
+      com.trunkstarter.appvars.swag_url: ""
+      com.trunkstarter.appvars.swag_validation: http

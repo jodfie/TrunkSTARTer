@@ -1,12 +1,12 @@
 services:
   homer:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: A dead simple static HOMepage for your servER
-      com.dockstarter.appinfo.nicename: Homer
-      com.dockstarter.appvars.homer_enabled: "false"
-      com.dockstarter.appvars.homer_init_assets: "1"
-      com.dockstarter.appvars.homer_network_mode: ""
-      com.dockstarter.appvars.homer_port_8080: "8080"
-      com.dockstarter.appvars.homer_restart: unless-stopped
-      com.dockstarter.appvars.homer_subfolder: ""
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: A dead simple static HOMepage for your servER
+      com.trunkstarter.appinfo.nicename: Homer
+      com.trunkstarter.appvars.homer_enabled: "false"
+      com.trunkstarter.appvars.homer_init_assets: "1"
+      com.trunkstarter.appvars.homer_network_mode: ""
+      com.trunkstarter.appvars.homer_port_8080: "8080"
+      com.trunkstarter.appvars.homer_restart: unless-stopped
+      com.trunkstarter.appvars.homer_subfolder: ""

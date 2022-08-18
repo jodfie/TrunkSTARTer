@@ -1,10 +1,10 @@
 services:
   muximux:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: A lightweight way to manage your HTPC
-      com.dockstarter.appinfo.nicename: Muximux
-      com.dockstarter.appvars.muximux_enabled: "false"
-      com.dockstarter.appvars.muximux_network_mode: ""
-      com.dockstarter.appvars.muximux_port_80: "8005"
-      com.dockstarter.appvars.muximux_restart: unless-stopped
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: A lightweight way to manage your HTPC
+      com.trunkstarter.appinfo.nicename: Muximux
+      com.trunkstarter.appvars.muximux_enabled: "false"
+      com.trunkstarter.appvars.muximux_network_mode: ""
+      com.trunkstarter.appvars.muximux_port_80: "8005"
+      com.trunkstarter.appvars.muximux_restart: unless-stopped

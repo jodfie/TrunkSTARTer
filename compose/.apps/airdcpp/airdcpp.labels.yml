@@ -1,14 +1,14 @@
 services:
   airdcpp:
     labels:
-      com.dockstarter.appinfo.deprecated: "true"
-      com.dockstarter.appinfo.description: Client for Advanced Direct Connect and Direct Connect networks
-      com.dockstarter.appinfo.nicename: AirdcPP
-      com.dockstarter.appvars.airdcpp_enabled: "false"
-      com.dockstarter.appvars.airdcpp_network_mode: ""
-      com.dockstarter.appvars.airdcpp_port_21248: "21248"
-      com.dockstarter.appvars.airdcpp_port_21249: "21249"
-      com.dockstarter.appvars.airdcpp_port_5600: "5600"
-      com.dockstarter.appvars.airdcpp_port_5601: "5601"
-      com.dockstarter.appvars.airdcpp_restart: unless-stopped
-      com.dockstarter.appvars.airdcpp_sharedir: /mnt/airdcpp
+      com.trunkstarter.appinfo.deprecated: "true"
+      com.trunkstarter.appinfo.description: Client for Advanced Direct Connect and Direct Connect networks
+      com.trunkstarter.appinfo.nicename: AirdcPP
+      com.trunkstarter.appvars.airdcpp_enabled: "false"
+      com.trunkstarter.appvars.airdcpp_network_mode: ""
+      com.trunkstarter.appvars.airdcpp_port_21248: "21248"
+      com.trunkstarter.appvars.airdcpp_port_21249: "21249"
+      com.trunkstarter.appvars.airdcpp_port_5600: "5600"
+      com.trunkstarter.appvars.airdcpp_port_5601: "5601"
+      com.trunkstarter.appvars.airdcpp_restart: unless-stopped
+      com.trunkstarter.appvars.airdcpp_sharedir: /mnt/airdcpp

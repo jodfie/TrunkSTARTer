@@ -1,14 +1,14 @@
 services:
   ldapauth:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Ldap-auth software is for authenticating users who request protected resources from servers proxied by nginx.
-      com.dockstarter.appinfo.nicename: ldapauth
-      com.dockstarter.appvars.ldapauth_certfile: ""
-      com.dockstarter.appvars.ldapauth_enabled: "false"
-      com.dockstarter.appvars.ldapauth_fernetkey: ""
-      com.dockstarter.appvars.ldapauth_keyfile: ""
-      com.dockstarter.appvars.ldapauth_network_mode: ""
-      com.dockstarter.appvars.ldapauth_port_8888: "8888"
-      com.dockstarter.appvars.ldapauth_port_9000: "9000"
-      com.dockstarter.appvars.ldapauth_restart: unless-stopped
+      com.trunktarter.appinfo.deprecated: "false"
+      com.trunktarter.appinfo.description: Ldap-auth software is for authenticating users who request protected resources from servers proxied by nginx.
+      com.trunktarter.appinfo.nicename: ldapauth
+      com.trunktarter.appvars.ldapauth_certfile: ""
+      com.trunktarter.appvars.ldapauth_enabled: "false"
+      com.trunktarter.appvars.ldapauth_fernetkey: ""
+      com.trunktarter.appvars.ldapauth_keyfile: ""
+      com.trunktarter.appvars.ldapauth_network_mode: ""
+      com.trunktarter.appvars.ldapauth_port_8888: "8888"
+      com.trunktarter.appvars.ldapauth_port_9000: "9000"
+      com.trunktarter.appvars.ldapauth_restart: unless-stopped

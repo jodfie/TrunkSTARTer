@@ -1,15 +1,15 @@
 services:
   bookstack:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Platform for storing and organising information and documentation
-      com.dockstarter.appinfo.nicename: BookStack
-      com.dockstarter.appvars.bookstack_app_url: ""
-      com.dockstarter.appvars.bookstack_db_database: ""
-      com.dockstarter.appvars.bookstack_db_host: ""
-      com.dockstarter.appvars.bookstack_db_pass: ""
-      com.dockstarter.appvars.bookstack_db_user: ""
-      com.dockstarter.appvars.bookstack_enabled: "false"
-      com.dockstarter.appvars.bookstack_network_mode: ""
-      com.dockstarter.appvars.bookstack_port_80: "6875"
-      com.dockstarter.appvars.bookstack_restart: unless-stopped
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Platform for storing and organising information and documentation
+      com.trunkstarter.appinfo.nicename: BookStack
+      com.trunkstarter.appvars.bookstack_app_url: ""
+      com.trunkstarter.appvars.bookstack_db_database: ""
+      com.trunkstarter.appvars.bookstack_db_host: ""
+      com.trunkstarter.appvars.bookstack_db_pass: ""
+      com.trunkstarter.appvars.bookstack_db_user: ""
+      com.trunkstarter.appvars.bookstack_enabled: "false"
+      com.trunkstarter.appvars.bookstack_network_mode: ""
+      com.trunkstarter.appvars.bookstack_port_80: "6875"
+      com.trunkstarter.appvars.bookstack_restart: unless-stopped

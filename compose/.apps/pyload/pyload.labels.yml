@@ -1,11 +1,11 @@
 services:
   pyload:
     labels:
-      com.dockstarter.appinfo.deprecated: "false"
-      com.dockstarter.appinfo.description: Python Download Manager alternative to JDownloader
-      com.dockstarter.appinfo.nicename: pyLoad
-      com.dockstarter.appvars.pyload_enabled: "false"
-      com.dockstarter.appvars.pyload_network_mode: ""
-      com.dockstarter.appvars.pyload_port_7227: "7227"
-      com.dockstarter.appvars.pyload_port_8000: "8000"
-      com.dockstarter.appvars.pyload_restart: unless-stopped
+      com.trunkstarter.appinfo.deprecated: "false"
+      com.trunkstarter.appinfo.description: Python Download Manager alternative to JDownloader
+      com.trunkstarter.appinfo.nicename: pyLoad
+      com.trunkstarter.appvars.pyload_enabled: "false"
+      com.trunkstarter.appvars.pyload_network_mode: ""
+      com.trunkstarter.appvars.pyload_port_7227: "7227"
+      com.trunkstarter.appvars.pyload_port_8000: "8000"
+      com.trunkstarter.appvars.pyload_restart: unless-stopped

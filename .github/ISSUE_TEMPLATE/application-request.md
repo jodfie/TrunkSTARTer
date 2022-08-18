@@ -6,12 +6,12 @@ labels: 'apps, docs, enhancement'
 assignees: ''
 ---
 
-# Name of the application
+# Name of the App
 
-## GitHub
+## GitHub Link
 
 ## Docker Hub/GitHub Registry
 
 ### Additional context
 
-Add any other context or screenshots about the feature request here.
+Add any other context or screenshots about the application request here.

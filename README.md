@@ -1,6 +1,6 @@
 # <!-- Home -->
 
-[![TrunkStarter]()](https://trunkstarter.com)
+[![TrunkStarter]()](https://www.trunkstarter.com)
 
 [![Discord chat](https://img.shields.io/discord/477959324183035936.svg?style=flat-square&color=607D8B&logo=discord)](https://discord.gg/trunk-recorder)
 
@@ -21,7 +21,7 @@ You may choose to rely on TrunkSTARTer for various changes to your Docker system
 
   ```bash
   sudo apt-get install curl git
-  bash -c "$(curl -fsSL )"
+  bash -c "$(curl -fsSL https://get.trunkstarter.com)"
   sudo reboot
   ```
 
@@ -32,7 +32,7 @@ You may choose to rely on TrunkSTARTer for various changes to your Docker system
   sudo apt-get dist-upgrade
   sudo apt-get install curl git
   bash -c "$(curl -fsSL https://get.docker.com)"
-  bash -c "$(curl -fsSL )"
+  bash -c "$(curl -fsSL https://get.trunkstarter.com)"
   sudo reboot
   ```
 
@@ -42,7 +42,7 @@ You may choose to rely on TrunkSTARTer for various changes to your Docker system
 
   ```bash
   sudo dnf install curl git
-  bash -c "$(curl -fsSL )"
+  bash -c "$(curl -fsSL https://get.trunkstarter.com)"
   sudo reboot
   ```
 
@@ -50,7 +50,7 @@ You may choose to rely on TrunkSTARTer for various changes to your Docker system
 
   ```bash
   sudo pacman -Sy curl docker git
-  bash -c "$(curl -fsSL )"
+  bash -c "$(curl -fsSL https://get.trunkstarter.com)"
   sudo reboot
   ```
 
@@ -58,7 +58,7 @@ You may choose to rely on TrunkSTARTer for various changes to your Docker system
 
   ```bash
   sudo yum install curl git
-  bash -c "$(curl -fsSL )"
+  bash -c "$(curl -fsSL https://get.trunkstarter.com)"
   sudo reboot
   ```
 

@@ -1,3 +1,0 @@
-services:
-  app-name:
-    network_mode: ${APP-NAME_NETWORK_MODE}

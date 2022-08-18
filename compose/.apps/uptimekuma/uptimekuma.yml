@@ -12,6 +12,7 @@ services:
         max-size: ${DOCKERLOGGING_MAXSIZE}
     restart: ${UPTIMEKUMA_RESTART}
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - ${DOCKERCONFDIR}/uptimekuma:/app/data
       - ${DOCKERSTORAGEDIR}:/storage
-      - /etc/localtime:/etc/localtime:ro
+      

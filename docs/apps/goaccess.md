@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/gregyankovoy/goaccess?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/gregyankovoy/goaccess)
 [![GitHub Stars](https://img.shields.io/github/stars/GregYankovoy/docker-goaccess?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/GregYankovoy/docker-goaccess)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/goaccess)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/goaccess)
 
 ## Description
 
@@ -18,4 +18,4 @@ that require a visual server report on the fly.
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).

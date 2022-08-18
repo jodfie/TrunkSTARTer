@@ -52,7 +52,7 @@ The maximum size of the log before it is rotated. Size is specified in kilobytes
 * Default value: `~/storage`
 
 Description:
-This directory will be mounted under `/storage` inside every container across DS. There is no specific use for this directory, it can be used however you like.
+This directory will be mounted under `/storage` inside every container across TS. There is no specific use for this directory, it can be used however you like.
 
 ## PGID
 

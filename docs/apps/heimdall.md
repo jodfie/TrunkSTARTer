@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/heimdall?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/linuxserver/heimdall)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-heimdall?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/linuxserver/docker-heimdall)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/heimdall)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/heimdall)
 
 ## Description
 
@@ -16,19 +16,19 @@ sea of bookmarks.
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).
 
 ### Reverse Proxy as homepage via SWAG
 
 In order to reverse proxy the Heimdall container as your homepage via
-[SWAG](https://dockstarter.com/apps/swag/) you will need to rename the subfolder
+[SWAG](https://trunkstarter.com/apps/swag/) you will need to rename the subfolder
 proxy sample with the following command:
 
 ```bash
-cp ~/.config/appdata/swag/nginx/proxy-confs/heimdall.subfolder.conf.sample ~/.config/appdata/swag/nginx/proxy-confs/heimdall.subfolder.conf
+cp ~/.config/trunkdata/swag/nginx/proxy-confs/heimdall.subfolder.conf.sample ~/.config/trunkdata/swag/nginx/proxy-confs/heimdall.subfolder.conf
 ```
 
-Then edit `~/.config/appdata/swag/nginx/site-confs/default` to comment out the
+Then edit `~/.config/trunkdata/swag/nginx/site-confs/default` to comment out the
 `location / {` and `location ~ \.php$ {` blocks down to their ending `}`.
 
 Example Before:
@@ -63,7 +63,7 @@ Example After:
     # }
 ```
 
-Lastly, restart the [SWAG](https://dockstarter.com/apps/swag/) container:
+Lastly, restart the [SWAG](https://trunkstarter.com/apps/swag/) container:
 
 ```bash
 docker restart swag

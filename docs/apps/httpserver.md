@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/patrickdappollonio/docker-http-server?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/patrickdappollonio/docker-http-server)
 [![GitHub Stars](https://img.shields.io/github/stars/patrickdappollonio/http-server?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com//patrickdappollonio/http-server)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/httpserver)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/httpserver)
 
 ## Description
 
@@ -19,5 +19,5 @@ Whenever you select a color combination, you will get a link at the bottom of th
 What you care about is the bit that says `indigo-red` or `indigo-pink`. That's the color you will set in variable and run the following command to apply any changes:
 
 ```bash
-ds -c up httpserver
+ts -c up httpserver
 ```

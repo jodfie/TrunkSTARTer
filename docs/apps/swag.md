@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/swag?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/linuxserver/swag)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-swag?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/linuxserver/docker-swag)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/swag)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/swag)
 
 ## Description
 
@@ -36,14 +36,14 @@ using subdomains ensure to add each subdomain to `SWAG_SUBDOMAINS` as each
 subdomain prefix (e.g. `SWAG_SUBDOMAINS=portainer,deluge,pihole`.
 
 There are a number of sample proxy configuration files found in
-`~/.config/appdata/swag/nginx/proxy-confs/` and in most cases will just need the
+`~/.config/trunkdata/swag/nginx/proxy-confs/` and in most cases will just need the
 .sample removed from the filename. Currently not every applicable app has an
 example configuration and are still being tested.
 
 Subfolder Example:
 
 ```bash
-cp ~/.config/appdata/swag/nginx/proxy-confs/portainer.subfolder.conf.sample ~/.config/appdata/swag/nginx/proxy-confs/portainer.subfolder.conf
+cp ~/.config/trunkdata/swag/nginx/proxy-confs/portainer.subfolder.conf.sample ~/.config/trunkdata/swag/nginx/proxy-confs/portainer.subfolder.conf
 ```
 
 This will make Portainer available at `domain.com/portainer`
@@ -51,7 +51,7 @@ This will make Portainer available at `domain.com/portainer`
 Subdomain Example:
 
 ```bash
-cp ~/.config/appdata/swag/nginx/proxy-confs/portainer.subdomain.conf.sample ~/.config/appdata/swag/nginx/proxy-confs/portainer.subdomain.conf
+cp ~/.config/trunkdata/swag/nginx/proxy-confs/portainer.subdomain.conf.sample ~/.config/trunkdata/swag/nginx/proxy-confs/portainer.subdomain.conf
 ```
 
 and will enable the service at `portainer.domain.com`

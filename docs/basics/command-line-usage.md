@@ -30,7 +30,7 @@ We encourage you to have a look at the generated `docker-compose.yml` file, howe
 
 If you make any changes to your `.env` file (such as changing a port or enabling a new app) you need to rerun the generator which will rebuild only the affected containers.
 
-### Update DockSTARTer
+### Update TrunkSTARTer
 
 ```bash
 sudo ts -u

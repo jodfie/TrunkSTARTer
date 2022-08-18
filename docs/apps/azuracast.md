@@ -1,7 +1,7 @@
 # AzuraCast
 
 [![GitHub Stars](https://img.shields.io/github/stars/azuracast/azuracast?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/azuracast/azuracast)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/azuracast)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/azuracast)
 
 ## Description
 
@@ -13,4 +13,4 @@ After your first setup, you can continue the setup process by visiting your serv
 
 By default, station storage, asset uploads, and backups are stored in your configured storage location. It is recommended to take advantage of the internal backup function before making major changes to your station or upgrading the software to the latest version.
 
-If you need assistance setting up this application please visit our [support page](https://dockstarter.com/basics/support/).
+If you need assistance setting up this application please visit our [support page](https://trunkstarter.com/basics/support/).

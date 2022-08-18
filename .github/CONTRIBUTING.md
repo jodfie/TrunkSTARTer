@@ -4,43 +4,43 @@ All code in this repository should be neat and tidy.
 
 More important than being beautiful is being functional. This repository is primarily shell scripts and YAML files.
 
-We use [GitHub Actions](https://github.com/GhostWriters/DockSTARTer/actions) to run [checks](https://github.com/GhostWriters/DockSTARTer/tree/master/.github/workflows) on the code in the repository. Code must pass checks run by GitHub Actions in order to merge to the `master` branch of the repository.
+We use [GitHub Actions](https://github.com/jodfie/TrunkSTARTer/actions) to run [checks](https://github.com/jodfie/TrunkSTARTer/tree/master/.github/workflows) on the code in the repository. Code must pass checks run by GitHub Actions in order to merge to the `master` branch of the repository.
 
 Try not to [code like a cowboy](https://en.wikipedia.org/wiki/Cowboy_coding).
 
 ## Setting up your Dev Environment
 
-1. Fork this repository and clone it onto your system. In later steps we'll refer to the location of your local repository as `/path/to/your/ds-repo`
-1. Run `bash /path/to/your/ds-repo/main.sh`
-1. The `ds` symlink should be created but let's verify. We'll run `whereis` to see where `ds` is and then run `ls -l` on this path to ensure the symlink points to `/path/to/your/ds-repo/main.sh`. E.g:
+1. Fork this repository and clone it onto your system. In later steps we'll refer to the location of your local repository as `/path/to/your/ts-repo`
+1. Run `bash /path/to/your/ts-repo/main.sh`
+1. The `ts` symlink should be created but let's verify. We'll run `whereis` to see where `ts` is and then run `ls -l` on this path to ensure the symlink points to `/path/to/your/ts-repo/main.sh`. E.g:
 
 ```
-dev0@dev0:~/gitsource/DockSTARTer$ whereis ds
-ds: /usr/bin/ds /usr/local/bin/ds
-dev0@dev0:~/gitsource/DockSTARTer$ ls -l /usr/bin/ds
-lrwxrwxrwx 1 root root 40 Jun 30 12:36 /usr/bin/ds -> /path/to/your/ds-repo/main.sh
+dev0@dev0:~/gitsource/TrunkSTARTer$ whereis ts
+ts: /usr/bin/ts /usr/local/bin/ts
+dev0@dev0:~/gitsource/TrunkSTARTer$ ls -l /usr/bin/ts
+lrwxrwxrwx 1 root root 40 Jun 30 12:36 /usr/bin/ts -> /path/to/your/ts-repo/main.sh
 ```
 
-Now you are free to develop and test as usual. All changes in your git repo can be tested in the ds GUI and with `ds` in the CLI.
+Now you are free to develop and test as usual. All changes in your git repo can be tested in the ts GUI and with `ts` in the CLI.
 
 ## Adding an App
 
-So you want to add a new app to DockSTARTer? It's pretty easy if you have a working docker compose.
+So you want to add a new app to TrunkSTARTer? It's pretty easy if you have a working docker compose.
 
-1. (Suggested) Develop a functional docker container for your new app in docker-compose.override.yml. Running `ds -c` should succesfully launch your new docker container and you'll be able to test this container to determine what properties should be specified in your docker compose file.
-1. Add a new folder in `/path/to/your/ds-repo/compose/.apps` for your new app.
+1. (Suggested) Develop a functional docker container for your new app in docker-compose.override.yml. Running `ts -c` should succesfully launch your new docker container and you'll be able to test this container to determine what properties should be specified in your docker compose file.
+1. Add a new folder in `/path/to/your/ts-repo/compose/.apps` for your new app.
 1. Populate the newly created folder above with .yml files. Read through the [YAML files](#YAML-files) section to understand which files to create and how to decompose the container you defined in step 1 above into the various .yml files needed.
 1. Test your app .yml files as suggested in the [Testing](#Testing) section. _Note: if you created the docker container (as suggested by step 1) in docker-compose.override.yml you should comment out or delete those lines before testing_
-1. Write app specific documentation in `/path/to/your/ds-repo/docs/apps/<appname>.md`
-1. Create a navigation link in mkdocs for this new documentation written in the step above. Edit the file `/path/to/your/ds-repo/mkdocs.yml`
+1. Write app specific documentation in `/path/to/your/ts-repo/docs/apps/<appname>.md`
+1. Create a navigation link in mkdocs for this new documentation written in the step above. Edit the file `/path/to/your/ts-repo/mkdocs.yml`
 
 Look at the **App Specifics** list in the **nav** section and add a new line for your app `- apps/<appname>.md`
 
 ### Testing
 
-- Try adding and removing using the CLI. `ds -a <appname>` and `ds -r <appname>`
-- `ds -c` should succesfully start your new app container. Test the DockSTARTer created container for app specific functionality
-- Try adding and removing from the GUI. (`ds` to launch the GUI)
+- Try adding and removing using the CLI. `ts -a <appname>` and `ts -r <appname>`
+- `ts -c` should succesfully start your new app container. Test the TruckSTARTer created container for app specific functionality
+- Try adding and removing from the GUI. (`ts` to launch the GUI)
 
 ## Shell scripts
 
@@ -62,12 +62,12 @@ Look at the **App Specifics** list in the **nav** section and add a new line for
     - `environment` should contain the environment variables used by the app
       - `- TZ=${TZ}` is always included even if not needed unless some other form of timezone variable is used
     - `labels` should contain the labels used by the app. `appvars` should be lowercase in the labels file and are converted to uppercase automatically to become variables in `.env`. The values in the labels file become the default values in `.env`
-      - `com.dockstarter.appinfo.deprecated: "<true|false>"` indicates if an app is deprecated
-      - `com.dockstarter.appinfo.description: "<Description>"` will show the description in the menus
-      - `com.dockstarter.appinfo.nicename: "<AppName>"` must match `<appname>` exactly but can have mixed case. Ex: Portainer vs PORTAINER
-      - `com.dockstarter.appvars.<appname>_enabled: "false"` must be included and default to false. Users pick which apps are enabled
-      - `com.dockstarter.appvars.<appname>_network_mode: ""` must be included and default to blank.
-      - `com.dockstarter.appvars.<appname>_<var_name>: "<var_value>"` one entry for each variable specific to the app environment. See existing apps for examples
+      - `com.trunkstarter.appinfo.deprecated: "<true|false>"` indicates if an app is deprecated
+      - `com.trunkstarter.appinfo.description: "<Description>"` will show the description in the menus
+      - `com.trunkstarter.appinfo.nicename: "<AppName>"` must match `<appname>` exactly but can have mixed case. Ex: Portainer vs PORTAINER
+      - `com.trunkstarter.appvars.<appname>_enabled: "false"` must be included and default to false. Users pick which apps are enabled
+      - `com.trunkstarter.appvars.<appname>_network_mode: ""` must be included and default to blank.
+      - `com.trunkstarter.appvars.<appname>_<var_name>: "<var_value>"` one entry for each variable specific to the app environment. See existing apps for examples
     - `logging` and the items beneath it should be included exactly as shown in other apps
     - `restart` should be `unless-stopped` or should include a comment about why another option is used
     - `volumes` should contain the volumes used by the app
@@ -90,7 +90,7 @@ Look at the **App Specifics** list in the **nav** section and add a new line for
 - Sections should be in the following order
   - `# Global Settings`
   - `# VPN Settings`
-  - `# END OF DEFAULT SETTINGS` should be the last non-blank line in the file and followed by a blank line. Variables for apps enabled by DS will be placed alphabetically beneath this like. Users may also define their own variables after this point in their .env file
+  - `# END OF DEFAULT SETTINGS` should be the last non-blank line in the file and followed by a blank line. Variables for apps enabled by TS will be placed alphabetically beneath this like. Users may also define their own variables after this point in their .env file
 
 ## Markdown files
 

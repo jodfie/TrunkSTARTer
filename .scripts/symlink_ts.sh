@@ -17,7 +17,7 @@ symlink_ts() {
 
     # /usr/local/bin/ts
     if [[ -L "/usr/local/bin/ts" ]] && [[ ${SCRIPTNAME} != "$(readlink -f /usr/local/bin/ts)" ]]; then
-        info "Attempting to remove /usr/local/bin/ds symlink."
+        info "Attempting to remove /usr/local/bin/ts symlink."
         rm -f "/usr/local/bin/ts" || fatal "Failed to remove file.\nFailing command: ${F[C]}rm -f \"/usr/local/bin/ts\""
     fi
     if [[ ! -L "/usr/local/bin/ts" ]]; then

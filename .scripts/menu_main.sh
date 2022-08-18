@@ -23,7 +23,7 @@ menu_main() {
         "Install Dependencies ")
             run_script 'run_install' || run_script 'menu_main'
             ;;
-        "Update DockSTARTer ")
+        "Update TrunkSTARTer ")
             run_script 'update_self' || run_script 'menu_main'
             ;;
         "Prune Docker System ")

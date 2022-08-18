@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/netdata/netdata?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/netdata/netdata)
 [![GitHub Stars](https://img.shields.io/github/stars/netdata/netdata?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/linuxserver/netdata/netdata)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/netdata)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/netdata)
 
 ## Description
 
@@ -14,7 +14,7 @@ monitoring agent you install on all your systems and containers.
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).
 
 ### Changing Netdata's Hostname
 
@@ -25,7 +25,7 @@ case you have multiple Netdata servers):
 
 - Stop the netdata container.
 - Create or edit your
-  [override file](https://dockstarter.com/overrides/introduction/)
+  [override file](https://trunkstarter.com/overrides/introduction/)
 
   ```yaml
   services:
@@ -33,7 +33,7 @@ case you have multiple Netdata servers):
       hostname: newnetdataname
   ```
 
-- Once this is done, run `sudo ds -c netdata`
+- Once this is done, run `sudo ts -c netdata`
 
 ### Notifications
 

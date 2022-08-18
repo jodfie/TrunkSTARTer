@@ -250,7 +250,7 @@ readonly NC
 # Log Functions
 MKTEMP_LOG=$(mktemp) || echo "Failed to create temporary log file."
 readonly MKTEMP_LOG
-echo "DockSTARTer Log" > "${MKTEMP_LOG}"
+echo "TrunkSTARTer Log" > "${MKTEMP_LOG}"
 log() {
     local TOTERM=${1-}
     local MESSAGE=${2-}
@@ -365,23 +365,23 @@ main() {
     if [[ ${FORCE-} == true ]]; then
         PROMPT="FORCE"
     fi
-    local DS_COMMAND
-    DS_COMMAND=$(command -v ds || true)
-    if [[ -L ${DS_COMMAND} ]]; then
-        local DS_SYMLINK
-        DS_SYMLINK=$(readlink -f "${DS_COMMAND}")
-        if [[ ${SCRIPTNAME} != "${DS_SYMLINK}" ]]; then
+    local TS_COMMAND
+    TS_COMMAND=$(command -v ts || true)
+    if [[ -L ${TS_COMMAND} ]]; then
+        local TS_SYMLINK
+        TS_SYMLINK=$(readlink -f "${TS_COMMAND}")
+        if [[ ${SCRIPTNAME} != "${TS_SYMLINK}" ]]; then
             if repo_exists; then
-                if run_script 'question_prompt' "${PROMPT:-CLI}" N "TrunkSTARTer installation found at ${DS_SYMLINK} location. Would you like to run ${SCRIPTNAME} instead?"; then
-                    run_script 'symlink_ds'
-                    DS_COMMAND=$(command -v ds || true)
-                    DS_SYMLINK=$(readlink -f "${DS_COMMAND}")
+                if run_script 'question_prompt' "${PROMPT:-CLI}" N "TrunkSTARTer installation found at ${TS_SYMLINK} location. Would you like to run ${SCRIPTNAME} instead?"; then
+                    run_script 'symlink_ts'
+                    TS_COMMAND=$(command -v ts || true)
+                    TS_SYMLINK=$(readlink -f "${TS_COMMAND}")
                 fi
             fi
-            warn "Attempting to run DockSTARTer from ${DS_SYMLINK} location."
-            sudo -H -E bash "${DS_SYMLINK}" -vu
-            sudo -H -E bash "${DS_SYMLINK}" -vi
-            exec sudo -H -E bash "${DS_SYMLINK}" "${ARGS[@]-}"
+            warn "Attempting to run TrunkSTARTer from ${TS_SYMLINK} location."
+            sudo -H -E bash "${TS_SYMLINK}" -vu
+            sudo -H -E bash "${TS_SYMLINK}" -vi
+            exec sudo -H -E bash "${TS_SYMLINK}" "${ARGS[@]-}"
         fi
     else
         if ! repo_exists; then
@@ -400,7 +400,7 @@ main() {
         exec sudo -H -E bash "${SCRIPTNAME}" "${ARGS[@]-}"
     fi
     # Create Symlink
-    run_script 'symlink_ds'
+    run_script 'symlink_ts'
     # Execute CLI Argument Functions
     if [[ -n ${ADD-} ]]; then
         run_script 'appvars_create' "${ADD}"

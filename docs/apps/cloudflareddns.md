@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/hotio/cloudflareddns?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/hotio/cloudflareddns)
 [![GitHub Stars](https://img.shields.io/github/stars/hotio/cloudflareddns?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/hotio/cloudflareddns)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/cloudflareddns)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/cloudflareddns)
 
 ## Description
 
@@ -14,4 +14,4 @@ allows you to use the free CloudFlare DNS Service as a Dynamic DNS Provider
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).

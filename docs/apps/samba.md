@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/dperson/samba?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/dperson/samba)
 [![GitHub Stars](https://img.shields.io/github/stars/dperson/samba?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/dperson/samba)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/samba)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/samba)
 
 ## Description
 
@@ -10,17 +10,17 @@
 mounts, which then are accessible and mountable on a Windows computer.
 
 By default, Samba will share all media directories and
-[Docker config directory](https://dockstarter.com/basics/env-var-info/#dockerconfdir)
+[Docker config directory](https://trunkstarter.com/basics/env-var-info/#dockerconfdir)
 over SMB on the host. All of these directories will be placed inside whatever
 share name is specified for `SAMBA_SHARENAME` on your `.env` file. These shares
-are protected with username `ds` and password `ds` by default, but **can and
+are protected with username `ts` and password `ts` by default, but **can and
 should be** changed on your `.env` file.
 
 ## Install/Setup
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).
 
 ### Access Shares
 
@@ -31,7 +31,7 @@ Replace `host` with your DNS or IP-address of your Docker host.
 ### Setting Up Additional Shares
 
 You can set up additional shares using an
-[override](https://dockstarter.com/overrides/introduction/). To do so, you need
+[override](https://trunkstarter.com/overrides/introduction/). To do so, you need
 to do the following:
 
 - Create a new variable in your `.env` file that will be the path to your new
@@ -59,9 +59,9 @@ to do the following:
     end of the `SHARE` and just copy and paste everything after the `=`. Don't
     forget to update what is inside the `${}`.
 
-- Run `ds -c up samba` to recreate the container and the new share can be
+- Run `ts -c up samba` to recreate the container and the new share can be
   generated.
 
 #### How To Mount Windows Share in Linux
 
-See [SMB Mounting](https://dockstarter.com/advanced/smb-mounting/).
+See [SMB Mounting](https://trunkstarter.com/advanced/smb-mounting/).

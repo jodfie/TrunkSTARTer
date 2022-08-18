@@ -1,7 +1,7 @@
-*               @GhostWriters/ds-scripts
-/.github/       @GhostWriters/ds-scripts @GhostWriters/ds-apps @GhostWriters/ds-docs
-/.scripts/      @GhostWriters/ds-scripts
-/compose/       @GhostWriters/ds-scripts @GhostWriters/ds-apps
-/docs/          @GhostWriters/ds-scripts @GhostWriters/ds-apps @GhostWriters/ds-docs
-/mkdocs.yml     @GhostWriters/ds-scripts @GhostWriters/ds-apps @GhostWriters/ds-docs
-/README.md      @GhostWriters/ds-scripts @GhostWriters/ds-apps @GhostWriters/ds-docs
+*               @jodfie/ts-scripts
+/.github/       @jodfie/ts-scripts @jodfie/ts-apps @jodfie/ts-docs
+/.scripts/      @jodfie/ts-scripts
+/compose/       @jodfie/ts-scripts @jodfie/ts-apps
+/docs/          @jodfie/ts-scripts @jodfie/ts-apps @jodfie/ts-docs
+/mkdocs.yml     @jodfie/ts-scripts @jodfie/ts-apps @jodfie/ts-docs
+/README.md      @jodfie/ts-scripts @jodfie/ts-apps @jodfie/ts-docs

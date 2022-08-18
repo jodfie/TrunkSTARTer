@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/openvpn-as?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/linuxserver/openvpn-as)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-openvpn-as?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/linuxserver/docker-openvpn-as)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/openvpnas)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/openvpnas)
 
 ## Description
 
@@ -18,7 +18,7 @@ The `admin` account is a system account (PAM) and after container update or recr
 
 - Set another user as an `admin`.
 - Delete the `admin` user in the GUI.
-- Modify the `as.conf` on your host located under `~/.compose/appdata/openvpnas/config/etc` and replace the line boot_pam_users.0=admin with #boot_pam_users.0=admin (this only has to be done once and will survive container recreation).
+- Modify the `as.conf` on your host located under `~/.compose/trunkdata/openvpnas/config/etc` and replace the line boot_pam_users.0=admin with #boot_pam_users.0=admin (this only has to be done once and will survive container recreation).
 
 ### Server Network Settings
 

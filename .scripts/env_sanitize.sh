@@ -56,7 +56,7 @@ env_sanitize() {
         notice "Migrating vars."
         sed -i "s/^LETSENCRYPT_/SWAG_/" "${COMPOSE_ENV}" || fatal "Failed to migrate vars from LETSENCRYPT_ to SWAG_\nFailing command: ${F[C]}sed -i \"s/^LETSENCRYPT_/SWAG_/\" \"${COMPOSE_ENV}\""
         run_script 'appvars_create' SWAG
-        notice "Completed migrating from LETSENCRYPT to SWAG. Run ${F[C]}ds -c${NC} to create the new container."
+        notice "Completed migrating from LETSENCRYPT to SWAG. Run ${F[C]}ts -c${NC} to create the new container."
     fi
 }
 

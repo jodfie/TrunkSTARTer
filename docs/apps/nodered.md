@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/nodered/node-red?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/nodered/node-red)
 [![GitHub Stars](https://img.shields.io/github/stars/node-red/node-red-docker?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/node-red/node-red-docker)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/nodered)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/nodered)
 
 ## Description
 
@@ -17,7 +17,7 @@ in a single-click.
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).
 
 ## Common Issues
 
@@ -52,8 +52,8 @@ npm ERR! Failed at the node-red-docker@1.2.6 start script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 ```
 
-This can be resolved by fixing the permissions on the appdata folder, just run:
+This can be resolved by fixing the permissions on the trunkdata folder, just run:
 
 ```bash
-sudo chown $USER:$GROUP -R ~/.config/appdata/nodered
+sudo chown $USER:$GROUP -R ~/.config/trunkdata/nodered
 ```

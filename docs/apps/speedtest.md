@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/henrywhitaker3/speedtest-tracker?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/henrywhitaker3/speedtest-tracker)
 [![GitHub Stars](https://img.shields.io/github/stars/henrywhitaker3/Speedtest-Tracker?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/henrywhitaker3/Speedtest-Tracker)
-[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/speedtest)
+[![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/jodfie/TrunkSTARTer/tree/master/compose/.apps/speedtest)
 
 ## Description
 
@@ -22,14 +22,14 @@ _Disclaimer: You will need to accept Ookla's EULA and privacy agreements in orde
 
 This application does not have any specific setup instructions documented. If
 you need assistance setting up this application please visit our
-[support page](https://dockstarter.com/basics/support/).
+[support page](https://trunkstarter.com/basics/support/).
 
 ### Base Path
 
 You can set a base path for this application if you want to host it behind a
 reverse proxy. By default it binds to `/`, but you can change the variable
 called `SPEEDTEST_BASE_PATH` in your `.env` file to whatever you want and run
-`ds -c up speedtest` afterwards.
+`ts -c up speedtest` afterwards.
 
 As usual, we **strongly discourage** having this application be public facing
 without some sort of protection in front of it, such as
@@ -40,4 +40,4 @@ without some sort of protection in front of it, such as
 This application supports notifications to some of the most popular services
 such as Telegram and Discord. Both of these services can be configured either
 using the application's Web GUI or environment variables through an
-[override](https://dockstarter.com/overrides/introduction).
+[override](https://trunkstarter.com/overrides/introduction).

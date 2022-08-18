@@ -107,9 +107,9 @@ Additional information can be found on our [Support Page](https://trunkstarter.c
 
 ## Contributing
 
-Want to help develop DockSTARTer? Check out our [contributing guidelines](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CONTRIBUTING.md) and [code of conduct](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CODE_OF_CONDUCT.md).
+Want to help develop TrunkSTARTer? Check out our [contributing guidelines](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CONTRIBUTING.md) and [code of conduct](https://github.com/jodfie/TrunkSTARTer/blob/master/.github/CODE_OF_CONDUCT.md).
 
 ## Special Thanks
 
-- [nemchik (iXNyne)](https://github.com/nemchik) for creating [DockSTARter](https://github.com/Ghostwriters/Dockstarter) that served as this project's primary codebase and nemchik and the rest of the DS staffs support in my constant bothering with questions.
+- [nemchik (iXNyne)](https://github.com/nemchik) for creating [DockSTARter](https://github.com/jodfie/TrunkSTARTer) that served as this project's primary codebase and nemchik and the rest of the DS staffs support in my constant bothering with questions.
 - [LinuxServer.io](https://www.linuxserver.io) for maintaining some of the Docker images used in this project.

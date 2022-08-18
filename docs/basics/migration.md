@@ -14,7 +14,7 @@
 ## From other Docker containers
 
 - Stop the app's old docker container
-- Start the app using DockSTARTer so that the config folder structure is created (`~/.config/trunkdata/<appname>` by default)
+- Start the app using TrunkSTARTer so that the config folder structure is created (`~/.config/trunkdata/<appname>` by default)
 - Stop the app's new docker container (`docker stop <appname>`)
 - Locate the config of the old docker container and copy it to `~/.config/trunkdata/<appname>` (only grab the required files)
 - Start the app (`sudo ts -c`)

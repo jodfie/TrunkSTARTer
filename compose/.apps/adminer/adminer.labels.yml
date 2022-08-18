@@ -8,5 +8,5 @@ services:
       com.trunkstarter.appvars.adminer_network_mode: ""
       com.trunkstarter.appvars.adminer_design: ""
       com.trunkstarter.appvars.adminer_plugins: ""
-      com.trunkstarter.appvars.adminer_port_8080: "8080"
+      com.trunkstarter.appvars.adminer_port_8010: "8010"
       com.trunkstarter.appvars.adminer_restart: unless-stopped

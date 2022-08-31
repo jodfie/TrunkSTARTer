@@ -159,7 +159,7 @@ cd $CURDIR
 rm -rf airspytmp
 
 # Permissions
-chown -R pi.pi $home/spyserver
+chown -R $UID.1000 $home/spyserver
 
 # Final info
 echo -e "

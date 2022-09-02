@@ -25,7 +25,7 @@ menu_main() {
             run_script 'run_install' || run_script 'menu_main'
             ;;
         "Install AirSpy Drivers ")
-            run_script 'get_airspy' || run_script 'menu_main'
+            run_script 'run_airspy' || run_script 'menu_main'
             ;;
         "Update TrunkSTARTer ")
             run_script 'update_self' || run_script 'menu_main'

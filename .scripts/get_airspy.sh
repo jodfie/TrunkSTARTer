@@ -50,7 +50,7 @@ chmod +x spyserver spyserver_ping
 cp spyserver spyserver_ping /usr/local/bin
 
 # Copy default config examples
-cp spyserver.config /home/$HOME/spyserver
+cp spyserver.config $HOME/spyserver
 
 # Installing libs for Airspy mini / R2
 echo -e "${CYAN} Installing libs for Airspy mini/R2 ${NC}"

@@ -41,7 +41,7 @@ mkdir airspytmp && cd airspytmp
 
 # Download airspy binaries
 echo -e "${CYAN} Downloading airspy binaries $ARCH bits ${NC}"
-wget https://airspy.com/?ddownload=4262 > /dev/null 2>&1
+wget https://airspy.com/downloads/spyserver-linux-x64.tgz > /dev/null 2>&1
 tar zxvf spyserver-linux-x64.tgz > /dev/null 2>&1
 
 # Copy airspy to bin dir

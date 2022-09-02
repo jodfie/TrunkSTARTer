@@ -6,6 +6,7 @@ menu_main() {
     local MAINOPTS=()
     MAINOPTS+=("Configuration " "Setup and start applications")
     MAINOPTS+=("Install Dependencies " "Install required components")
+    MAINOPTS+=("Install AirSpy Drivers " "Install required AirSpy Drivers")
     MAINOPTS+=("Update TrunkSTARTer " "Get the latest version of TrunkSTARTer")
     MAINOPTS+=("Prune Docker System " "Remove all unused containers, networks, volumes, images and build cache")
 
@@ -22,6 +23,9 @@ menu_main() {
             ;;
         "Install Dependencies ")
             run_script 'run_install' || run_script 'menu_main'
+            ;;
+        "Install AirSpy Drivers ")
+            run_script 'get_airspy' || run_script 'menu_main'
             ;;
         "Update TrunkSTARTer ")
             run_script 'update_self' || run_script 'menu_main'

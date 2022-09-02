@@ -20,9 +20,9 @@ ARCH=$(getconf LONG_BIT)
 
 echo -e "\n\t${RED} Installing Airspy software ${GREEN}$ARCH bit ${NC}\n"
 
-if [[ ! -d "$home/spyserver" ]]
+if [[ ! -d "$HOME/spyserver" ]]
 then
-	mkdir $home/spyserver
+	mkdir $HOME/spyserver
 fi
 
 if [[ -d "airspytmp" ]]
@@ -50,7 +50,7 @@ chmod +x spyserver spyserver_ping
 cp spyserver spyserver_ping /usr/local/bin
 
 # Copy default config examples
-cp spyserver.config /home/$home/spyserver
+cp spyserver.config /home/$HOME/spyserver
 
 # Installing libs for Airspy mini / R2
 echo -e "${CYAN} Installing libs for Airspy mini/R2 ${NC}"
@@ -68,7 +68,7 @@ ldconfig
 
 # Create default config examples
 echo -e "${CYAN} Creating default config for Airspy mini"
-cat <<EOF > $home/spyserver/spyserver.mini.config
+cat <<EOF > $HOME/spyserver/spyserver.mini.config
 # SPY Server Configuration File for Airspy Mini
 bind_host = 0.0.0.0
 bind_port = 5556
@@ -100,7 +100,7 @@ buffer_size_ms = 50
 buffer_count = 10
 EOF
 echo -e "${CYAN} Creating default config for Airspy R2"
-cat <<EOF > $home/spyserver/spyserver.r2.config
+cat <<EOF > $HOME/spyserver/spyserver.r2.config
 # SPY Server Configuration File for Airspy R2
 bind_host = 0.0.0.0
 bind_port = 5557
@@ -142,8 +142,8 @@ After=network-online.target
 Type=simple
 Restart=always
 RestartSec=5
-ExecStartPre=/usr/bin/test -f $home/spyserver/spyserver.%i.config
-ExecStart=/usr/local/bin/spyserver $home/spyserver/spyserver.%i.config
+ExecStartPre=/usr/bin/test -f $HOME/spyserver/spyserver.%i.config
+ExecStart=/usr/local/bin/spyserver $HOME/spyserver/spyserver.%i.config
 User=pi
 
 [Install]
@@ -159,13 +159,13 @@ cd $CURDIR
 rm -rf airspytmp
 
 # Permissions
-chown -R $UID.1000 $home/spyserver
+chown -R $UID.1000 $HOME/spyserver
 
 # Final info
 echo -e "
-${RED}The example config template file is in ${YELLOW}$home/spyserver/spyserver.config ${NC}
-${RED}The example config file for ${GREEN}Airspy mini${RED} is ${YELLOW}$home/spyserver/spyserver.mini.config ${NC}
-${RED}The example config file for ${GREEN}Airspy R2${RED} is ${YELLOW}$home/spyserver/spyserver.r2.config ${NC}
+${RED}The example config template file is in ${YELLOW}$HOME/spyserver/spyserver.config ${NC}
+${RED}The example config file for ${GREEN}Airspy mini${RED} is ${YELLOW}$HOME/spyserver/spyserver.mini.config ${NC}
+${RED}The example config file for ${GREEN}Airspy R2${RED} is ${YELLOW}$HOME/spyserver/spyserver.r2.config ${NC}
 
 ${PURPLE}To enable Airspy mini at startup run ${GREEN} sudo systemctl enable spyserver@mini
 ${PURPLE}To start Airspy mini at startup run ${GREEN} sudo systemctl start spyserver@mini

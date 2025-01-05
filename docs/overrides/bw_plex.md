@@ -22,14 +22,13 @@ BW_PLEX_URL=http://plex:32400
 
 ```yaml
 services:
-
   bw_plex:
-    image: hellowlol/bw_plex
+    image: hellowlol/bw_plex:latest
     container_name: bw_plex
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${DOCKERCONFDIR}/bw_plex:/config
-      - ${DOCKERSTORAGEDIR}:/storage
+      - ${DOCKER_VOLUME_CONFIG}/bw_plex:/config
+      - ${DOCKER_VOLUME_STORAGE}:/storage
     command: bw_plex --url ${BW_PLEX_URL} -t ${BW_PLEX_TOKEN} -df /config watch
 ```

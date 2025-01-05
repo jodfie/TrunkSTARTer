@@ -1,5 +1,9 @@
 # OpenVPNAS
 
+## DEPRECATED
+
+DEPRECATION NOTICE: This image is deprecated as of 2023-06-02. Use Gluetun or PrivoxyVPN.
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/openvpn-as?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/linuxserver/openvpn-as)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-openvpn-as?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/linuxserver/docker-openvpn-as)
 [![Compose Templates](https://img.shields.io/static/v1?style=flat-square&color=607D8B&label=compose&message=templates)](https://github.com/GhostWriters/DockSTARTer/tree/master/compose/.apps/openvpnas)
@@ -22,4 +26,4 @@ The `admin` account is a system account (PAM) and after container update or recr
 
 ### Server Network Settings
 
-Make sure to change Hostname or IP Address to your public IP or public DNS name.  It defaults to the docker internal IP.  Also, this goes without saying, make sure to forward the correct ports on your firewall to your host IP.
+Make sure to change Hostname or IP Address to your public IP or public DNS name. It defaults to the docker internal IP. Also, this goes without saying, make sure to forward the correct ports on your firewall to your host IP.

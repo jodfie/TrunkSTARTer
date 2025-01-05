@@ -1,12 +1,12 @@
 # <!-- Home -->
 
-[![DockSTARTer](https://github.com/GhostWriters/DockSTARTer/raw/master/docs/images/logo.png)](https://dockstarter.com)
+[![DockSTARTer](https://github.com/GhostWriters/DockSTARTer/raw/master/docs/assets/logo.png)](https://dockstarter.com)
 
 [![Supporters on Open Collective](https://img.shields.io/opencollective/all/DockSTARTer.svg?style=flat-square&color=607D8B&logo=opencollective&logoColor=white)](#supporters)
 [![Discord chat](https://img.shields.io/discord/477959324183035936.svg?style=flat-square&color=607D8B&logo=discord&logoColor=white)](https://dockstarter.com/discord)
 [![GitHub contributors](https://img.shields.io/github/contributors/GhostWriters/DockSTARTer.svg?style=flat-square&color=607D8B&logo=github&logoColor=white)](https://github.com/GhostWriters/DockSTARTer/graphs/contributors)
 [![GitHub last commit master](https://img.shields.io/github/last-commit/GhostWriters/DockSTARTer/master.svg?style=flat-square&color=607D8B&logo=github&logoColor=white&label=code%20committed)](https://github.com/GhostWriters/DockSTARTer/commits/master)
-[![GitHub license](https://img.shields.io/github/license/GhostWriters/DockSTARTer.svg?style=flat-square&color=607D8B&logo=github&logoColor=white)](https://github.com/GhostWriters/DockSTARTer/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/github/license/GhostWriters/DockSTARTer.svg?style=flat-square&color=607D8B&logo=github&logoColor=white)](https://github.com/GhostWriters/DockSTARTer/blob/master/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/GhostWriters/DockSTARTer/tests.yml?style=flat-square&color=607D8B&logo=github&logoColor=white&branch=master)](https://github.com/GhostWriters/DockSTARTer/actions?query=workflow%3ARun%20Tests+branch%3Amaster)
 
 The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
@@ -29,6 +29,14 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 - You must be logged in as a non-root user with sudo permissions.
 
 ### One Time Setup (required)
+
+- APK Systems (Alpine)
+
+  ```bash
+  sudo apk add curl git
+  bash -c "$(curl -fsSL https://get.dockstarter.com)"
+  sudo reboot
+  ```
 
 - APT Systems ([Debian](https://docs.docker.com/install/linux/docker-ce/debian/#os-requirements), [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements), etc)
 

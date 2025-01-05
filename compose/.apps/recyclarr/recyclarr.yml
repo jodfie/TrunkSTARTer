@@ -1,18 +1,12 @@
 services:
   recyclarr:
-    container_name: recyclarr
+    container_name: ${RECYCLARR_CONTAINER_NAME}
     environment:
-      - RECYCLARR_CREATE_CONFIG=${RECYCLARR_CREATE_CONFIG}
+      - RECYCLARR_CREATE_CONFIG=${RECYCLARR_ENVIRONMENT_CREATE_CONFIG}
       - TZ=${TZ}
-    image: ghcr.io/recyclarr/recyclarr
-    logging:
-      driver: json-file
-      options:
-        max-file: ${DOCKERLOGGING_MAXFILE}
-        max-size: ${DOCKERLOGGING_MAXSIZE}
     restart: ${RECYCLARR_RESTART}
     user: ${PUID}:${PGID}
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${DOCKERSTORAGEDIR}:/storage
-      - ${DOCKERCONFDIR}/recyclarr:/config
+      - ${DOCKER_VOLUME_CONFIG}/recyclarr:/config
+      - ${DOCKER_VOLUME_STORAGE}:/storage

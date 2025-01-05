@@ -12,11 +12,11 @@
 
 Be sure to read the [app specific documentation](https://github.com/bastienwirtz/homer) on github as the environment variables below are an extension of those explained in the documentation.
 
-Note that your configuration files and homer assets are located in `${DOCKERCONFDIR}/homer`
+Note that your configuration files and homer assets are located in `${DOCKER_VOLUME_CONFIG}/homer`
 
 ### Environment Variables
 
-#### HOMER\_INIT_ASSETS
+#### HOMER_INIT_ASSETS
 
 `1` (default) Install example configuration file & assets (favicons, ...) to help you get started.
 
@@ -24,4 +24,4 @@ Note that your configuration files and homer assets are located in `${DOCKERCONF
 
 #### HOMER_SUBFOLDER
 
-(default: `''`) If you would like to host Homer in a subfolder, (ex: http://my-domain/homer), set this to the subfolder path (ex /homer).
+(default: `''`) If you would like to host Homer in a subfolder, (ex: `http://my-domain/homer`), set this to the subfolder path (ex /homer).

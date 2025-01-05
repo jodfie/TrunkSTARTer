@@ -13,25 +13,19 @@
 
 ```yaml
 services:
-
   conreq:
     container_name: conreq
     environment:
       - PGID=${PGID}
       - PUID=${PUID}
       - TZ=${TZ}
-    hostname: ${DOCKERHOSTNAME}
-    image: ghcr.io/roxedus/conreq
-    logging:
-      driver: json-file
-      options:
-        max-file: ${DOCKERLOGGING_MAXFILE}
-        max-size: ${DOCKERLOGGING_MAXSIZE}
+    hostname: ${DOCKER_HOSTNAME}
+    image: ghcr.io/roxedus/conreq:latest
     ports:
       - 8000:8000
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${DOCKERCONFDIR}/conreq:/config
-      - ${DOCKERSTORAGEDIR}:/storage
+      - ${DOCKER_VOLUME_CONFIG}/conreq:/config
+      - ${DOCKER_VOLUME_STORAGE}:/storage
 ```

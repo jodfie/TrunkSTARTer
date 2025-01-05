@@ -2,7 +2,7 @@
 
 ## DEPRECATED
 
-DEPRECATION NOTICE: This image is deprecated as of 6/9/22 due to failure to pass CI manifest checks. The failing command is: `docker manifest inspect gangefors/airdcpp-webclient`. It appears the image should still work fine, and if this issue is resolved in the future we can reverse the deprecation.
+DEPRECATION NOTICE: This image is deprecated as of 2022-06-09 due to failure to pass CI manifest checks. The failing command is: `docker manifest inspect gangefors/airdcpp-webclient`. It appears the image should still work fine, and if this issue is resolved in the future we can reverse the deprecation.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/gangefors/airdcpp-webclient?style=flat-square&color=607D8B&label=docker%20pulls&logo=docker)](https://hub.docker.com/r/gangefors/airdcpp-webclient)
 [![GitHub Stars](https://img.shields.io/github/stars/gangefors/docker-airdcpp-webclient?style=flat-square&color=607D8B&label=github%20stars&logo=github)](https://github.com/gangefors/docker-airdcpp-webclient)
@@ -11,7 +11,7 @@ DEPRECATION NOTICE: This image is deprecated as of 6/9/22 due to failure to pass
 ## Description
 
 [AirDC++](https://www.airdcpp.net/) is an easy to use client for [Advanced Direct Connect](http://en.wikipedia.org/wiki/Advanced_Direct_Connect)
-and [Direct Connect](http://en.wikipedia.org/wiki/Direct_Connect_(file_sharing)) networks. You are able to join "hubs" with other users, and chat, perform searches and browse the share of each user.
+and [Direct Connect](http://en.wikipedia.org/wiki/Direct_Connect_%28protocol%29) networks. You are able to join "hubs" with other users, and chat, perform searches and browse the share of each user.
 
 ## Install/Setup
 

@@ -13,25 +13,19 @@
 
 ```yaml
 services:
-
   plpp:
     container_name: plpp
     environment:
       - PGID=${PGID}
       - PUID=${PUID}
       - TZ=${TZ}
-    hostname: ${DOCKERHOSTNAME}
-    image: tronyx/docker-plpp
-    logging:
-      driver: json-file
-      options:
-        max-file: ${DOCKERLOGGING_MAXFILE}
-        max-size: ${DOCKERLOGGING_MAXSIZE}
+    hostname: ${DOCKER_HOSTNAME}
+    image: tronyx/docker-plpp:latest
     ports:
       - 8383:80
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${DOCKERCONFDIR}/plpp:/config
-      - ${DOCKERSTORAGEDIR}:/storage
+      - ${DOCKER_VOLUME_CONFIG}/plpp:/config
+      - ${DOCKER_VOLUME_STORAGE}:/storage
 ```

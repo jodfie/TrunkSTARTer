@@ -3,23 +3,35 @@ name: Build mkdocs and deploy to GitHub Pages
 on: [push, pull_request]
 
 jobs:
-
   build:
     name: Build docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.2
-      - uses: actions/setup-python@v4.6.0
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+      - name: Setup python
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: 3.x
-      - uses: actions/cache@v3.3.1
+      - name: Get pip cache directory
+        id: pip-cache
+        run: |
+          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+      - name: Cache dependencies
+        uses: actions/cache@v4.2.0
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install -r docs/requirements.txt
-      - run: |
-          cp README.md docs/index.md
-      - run: mkdocs build
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+      - name: Build documentation
+        run: mkdocs build
 
   deploy:
     if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
@@ -27,17 +39,28 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.2
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
         with:
-          fetch-depth: '0'
-      - uses: actions/setup-python@v4.6.0
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+      - name: Setup python
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: 3.x
-      - uses: actions/cache@v3.3.1
+      - name: Get pip cache directory
+        id: pip-cache
+        run: |
+          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+      - name: Cache dependencies
+        uses: actions/cache@v4.2.0
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install -r docs/requirements.txt
-      - run: |
-          cp README.md docs/index.md
-      - run: mkdocs gh-deploy --force
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
